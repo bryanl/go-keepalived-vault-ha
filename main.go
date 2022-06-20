@@ -27,6 +27,7 @@ func main() {
 	flag.StringVar(&c.KeyFile, "key", "", "Path to Vault server private key (optional)")
 	flag.StringVar(&c.CaCert, "ca-cert", "", "Path to Vault server CA certificate (optional)")
 	flag.BoolVar(&c.Insecure, "insecure", false, "Skip TLS checks")
+	flag.BoolVar(&c.Version, "version", false, "Show version")
 
 	flag.Parse()
 
